@@ -1,4 +1,4 @@
-class_name Game extends Node2D
+class_name GameManager extends Node2D
 
 
 func safely_get_node(path: NodePath) -> Node:
