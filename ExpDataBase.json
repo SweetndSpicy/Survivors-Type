@@ -1,0 +1,26 @@
+{
+	"1": {
+		"total_exp" : 0,
+		"needed_exp" : 100
+	},
+	
+	"2": {
+		"total_exp" : 100,
+		"needed_exp" : 125
+	},
+	
+	"3": {
+		"total_exp" : 225,
+		"needed_exp" : 175
+	},
+	
+	"4": {
+		"total_exp" : 400,
+		"needed_exp" : 250
+	},
+	
+	"5": {
+		"total_exp" : 650,
+		"needed_exp" : 0
+	}
+}
