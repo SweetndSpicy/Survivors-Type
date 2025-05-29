@@ -2,6 +2,7 @@ extends Node2D
 
 @export var bullet_scene :PackedScene= preload("res://Items/Weapons/Scenes/Bullet.tscn")
 @onready var bullet_timer :Timer= %Timer
+@onready var warrior :Warrior= $".."
 
 func _ready() -> void:
 	bullet_timer.timeout.connect(_on_bullet_cooldown_timeout)
@@ -14,7 +15,7 @@ func _on_bullet_cooldown_timeout() -> void:
 		
 	var bullet = bullet_scene.instantiate()
 	get_tree().current_scene.add_child(bullet)
-	bullet.global_position = global_position
+	bullet.global_position = warrior.global_position
 	bullet.set_target(closest.global_position)
 	
 func find_closest_enemy() -> Node2D:
