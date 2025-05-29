@@ -4,6 +4,13 @@ extends Node2D
 @onready var bullet_timer :Timer= %Timer
 @onready var warrior :Warrior= $".."
 
+------------------------------------------------
+
+#For test
+#Another test
+
+------------------------------------------------
+
 func _ready() -> void:
 	bullet_timer.timeout.connect(_on_bullet_cooldown_timeout)
 	bullet_timer.start()
